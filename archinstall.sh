@@ -39,5 +39,42 @@ mkdir /mnt/boot /mnt/home
 mount /dev/sda1 /mnt/boot
 mount /dev/sda4 /mnt/home
 
-# Supondo que a conexão é cabeada e está funcionando
+# Supondo que já tenha o arquivo mirrorlist nas mãos
 # Configurando o mirror do pacman
+mv -f mirrorlist /etc/pacman.d/mirrorlist
+
+# Instalando
+pacstrap /mnt base base-devel
+
+genfstab -U -p /mnt >> /mnt/etc/fstab
+nano /mnt/etc/fstab
+
+arch-chroot /mnt /bin/bash
+
+if [ -f locale.gen.aux ]; then
+        rm locale.gen.aux
+fi
+while read line;
+do
+if [ "$line" == "#pt_BR.UTF-8 UTF-8" ]; then
+        echo "pt_BR.UTF-8 UTF-8" >> locale.gen.aux
+else
+        echo "$line" >> locale.gen.aux
+fi
+done < /etc/locale.gen
+
+while read line;
+do
+if [ "$line" == "#en_US.UTF-8 UTF-8" ]; then
+        echo "en_US.UTF-8 UTF-8" >> locale.gen.aux.aux
+else
+        echo "$line" >> locale.gen.aux.aux
+fi
+done < locale.gen.aux
+rm locale.gen.aux
+mv -f locale.gen.aux.aux /etc/locale.gen
+locale-gen
+echo LANG=pt_BR.UTF-8 > /etc/locale.conf
+export LANG=pt_BR.UTF-8
+loadkeys br-abnt2
+echo "KEYMAP=br-abnt2" > /etc/vconsole.conf
