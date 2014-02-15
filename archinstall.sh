@@ -78,3 +78,18 @@ echo LANG=pt_BR.UTF-8 > /etc/locale.conf
 export LANG=pt_BR.UTF-8
 loadkeys br-abnt2
 echo "KEYMAP=br-abnt2" > /etc/vconsole.conf
+# Supondo que você se encontra em São Paulo
+ln -s /usr/share/zoneinfo/America/Sao_Paulo /etc/localtime
+hwclock --systohc --utc
+# Supondo que o nome do pc é CYM
+echo CYM > /etc/hostname
+systemctl enable dhcpcd.service
+passwd
+# Supondo que sua placa mãe tem UEFI boot
+mount -t efivarfs efivarfs /sys/firmware/efi/efivars
+pacman -S grub efibootmgr
+grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id=arch_grub --recheck
+grub-mkconfig -o /boot/grub/grub.cfg
+exit
+umount -R /mnt
+reboot
