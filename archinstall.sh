@@ -18,3 +18,26 @@ done < /etc/locale.gen
 mv -f locale.gen.aux /etc/locale.gen
 locale-gen
 export LANG=pt_BR.UTF-8
+
+# Preparando o disco supondo que o device file do disco da instalação é o sda
+sgdisk -og /dev/sda
+sgdisk -n 1:2048:1050623 -c 1:"EFI System" -t 1:ef00 /dev/sda
+sgdisk -n 2:1050624:17827839 -c 2:"Linux swap" -t 2:8200 /dev/sda
+sgdisk -n 3:17827840:49285119 -c 3:"Linux filesystem" -t 3:8300 /dev/sda
+sgdisk -n 4:49285120:976773134 -c 4:"Linux /home" -t 4:8302 /dev/sda
+
+# Formatando
+mkfs.fat -F32 /dev/sda1
+mkswap /dev/sda2
+mkfs.ext4 /dev/sda3
+mkfs.ext4 /dev/sda4
+
+# Montando
+swapon /dev/sda2
+mount /dev/sda3 /mnt
+mkdir /mnt/boot /mnt/home
+mount /dev/sda1 /mnt/boot
+mount /dev/sda4 /mnt/home
+
+# Supondo que a conexão é cabeada e está funcionando
+# Configurando o mirror do pacman
