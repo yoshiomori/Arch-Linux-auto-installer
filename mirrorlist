@@ -1,0 +1,126 @@
+#
+# Arch Linux repository mirrorlist
+# Sorted by mirror score from mirror status page
+# Generated on 2014-02-15
+#
+
+# Score: 0.5, United States
+Server = http://mirror.us.leaseweb.net/archlinux/$repo/os/$arch
+# Score: 0.5, Germany
+Server = http://mirror.de.leaseweb.net/archlinux/$repo/os/$arch
+# Score: 0.5, Netherlands
+Server = http://mirror.nl.leaseweb.net/archlinux/$repo/os/$arch
+# Score: 0.5, Netherlands
+Server = http://ftp.nluug.nl/pub/os/Linux/distr/archlinux/$repo/os/$arch
+# Score: 0.5, Poland
+Server = http://mirror.chmuri.net/archmirror/$repo/os/$arch
+# Score: 0.6, France
+Server = http://archlinux.polymorf.fr/$repo/os/$arch
+# Score: 0.6, Iceland
+Server = http://mirror.system.is/arch/$repo/os/$arch
+# Score: 0.7, United States
+Server = http://mirrors.liquidweb.com/archlinux/$repo/os/$arch
+# Score: 0.7, Germany
+Server = http://archlinux.limun.org/$repo/os/$arch
+# Score: 0.8, Germany
+Server = http://mirror.1favre.de/$repo/os/$arch
+# Score: 0.8, Belarus
+Server = http://mirror.datacenter.by/pub/archlinux/$repo/os/$arch
+# Score: 0.8, Germany
+Server = http://ftp.tuxdroid.org/archlinux/$repo/os/$arch
+# Score: 0.9, Belgium
+Server = http://archlinux.mirror.kangaroot.net/$repo/os/$arch
+# Score: 0.9, United Kingdom
+Server = http://archlinux.mirrors.uk2.net/$repo/os/$arch
+# Score: 0.9, United States
+Server = http://lug.mtu.edu/archlinux/$repo/os/$arch
+# Score: 1.0, France
+Server = http://arch.tamcore.eu/$repo/os/$arch
+# Score: 1.0, Netherlands
+Server = http://arch.apt-get.eu/$repo/os/$arch
+# Score: 1.0, United States
+Server = http://archlinux.surlyjake.com/archlinux/$repo/os/$arch
+# Score: 1.0, United States
+Server = http://mirror.umd.edu/archlinux/$repo/os/$arch
+# Score: 1.0, Italy
+Server = http://archlinux.openlabto.org/archlinux/$repo/os/$arch
+# Score: 1.0, United Kingdom
+Server = http://mirror.bytemark.co.uk/archlinux/$repo/os/$arch
+# Score: 1.1, Poland
+Server = http://ftp.vectranet.pl/archlinux/$repo/os/$arch
+# Score: 1.1, Germany
+Server = http://ftp5.gwdg.de/pub/linux/archlinux/$repo/os/$arch
+# Score: 1.1, Sweden
+Server = http://ftp.lysator.liu.se/pub/archlinux/$repo/os/$arch
+# Score: 1.2, Greece
+Server = http://foss.aueb.gr/mirrors/linux/archlinux/$repo/os/$arch
+# Score: 1.2, Germany
+Server = http://ftp.neutrinopower.de/archlinux/$repo/os/$arch
+# Score: 1.2, Germany
+Server = http://mirror.unitedcolo.de/archlinux/$repo/os/$arch
+# Score: 1.2, Taiwan, Province of China
+Server = http://ftp.tku.edu.tw/Linux/ArchLinux/$repo/os/$arch
+# Score: 1.2, Romania
+Server = http://archlinux.mirrors.linux.ro/$repo/os/$arch
+# Score: 1.2, France
+Server = http://arch.nimukaito.net/$repo/os/$arch
+# Score: 1.2, Netherlands
+Server = http://fruk.org/archlinux/$repo/os/$arch
+# Score: 1.2, Norway
+Server = http://mirror.archlinux.no/$repo/os/$arch
+# Score: 1.2, Germany
+Server = http://mirror.selfnet.de/archlinux/$repo/os/$arch
+# Score: 1.2, Belarus
+Server = http://ftp.byfly.by/pub/archlinux/$repo/os/$arch
+# Score: 1.2, Czech Republic
+Server = http://mirror.vpsfree.cz/archlinux/$repo/os/$arch
+# Score: 1.3, Austria
+Server = http://mirror1.htu.tugraz.at/archlinux/$repo/os/$arch
+# Score: 1.3, Czech Republic
+Server = http://archlinux.mirror.dkm.cz/pub/archlinux/$repo/os/$arch
+# Score: 1.3, Netherlands
+Server = http://ftp.snt.utwente.nl/pub/os/linux/archlinux/$repo/os/$arch
+# Score: 1.3, Switzerland
+Server = http://archlinux.puzzle.ch/$repo/os/$arch
+# Score: 1.3, Australia
+Server = http://mirror.aarnet.edu.au/pub/archlinux/$repo/os/$arch
+# Score: 1.4, Russian Federation
+Server = http://mirror.yandex.ru/archlinux/$repo/os/$arch
+# Score: 1.4, Germany
+Server = http://mirror.fluxent.de/archlinux/$repo/os/$arch
+# Score: 1.4, Germany
+Server = http://ftp.hawo.stw.uni-erlangen.de/archlinux/$repo/os/$arch
+# Score: 1.4, Germany
+Server = http://mirror.netcologne.de/archlinux/$repo/os/$arch
+# Score: 1.5, United States
+Server = http://cake.lib.fit.edu/archlinux/$repo/os/$arch
+# Score: 1.5, United States
+Server = http://www.gtlib.gatech.edu/pub/archlinux/$repo/os/$arch
+# Score: 1.5, United States
+Server = http://mirror.nexcess.net/archlinux/$repo/os/$arch
+# Score: 1.5, France
+Server = http://archlinux.vi-di.fr/$repo/os/$arch
+# Score: 1.5, United States
+Server = http://mirror.rit.edu/archlinux/$repo/os/$arch
+# Score: 1.5, United States
+Server = http://mirrors.cecsresearch.org/archlinux/$repo/os/$arch
+# Score: 1.6, Brazil
+Server = http://pet.inf.ufsc.br/mirrors/archlinux/$repo/os/$arch
+# Score: 1.6, United States
+Server = http://mirror.jmu.edu/pub/archlinux/$repo/os/$arch
+# Score: 1.7, United States
+Server = http://mirrors.cat.pdx.edu/archlinux/$repo/os/$arch
+# Score: 1.7, Sweden
+Server = http://ftp.portlane.com/pub/os/linux/archlinux/$repo/os/$arch
+# Score: 1.7, Germany
+Server = http://ftp.spline.inf.fu-berlin.de/mirrors/archlinux/$repo/os/$arch
+# Score: 1.8, Finland
+Server = http://mirror.archlinux.fi/archlinux/$repo/os/$arch
+# Score: 1.8, Australia
+Server = http://mirror.internode.on.net/pub/archlinux/$repo/os/$arch
+# Score: 1.8, France
+Server = http://mirror.solusipse.net/archlinux/$repo/os/$arch
+# Score: 1.8, United States
+Server = http://mirrors.aggregate.org/archlinux/$repo/os/$arch
+# Score: 1.8, Brazil
+Server = http://archlinux.c3sl.ufpr.br/$repo/os/$arch
